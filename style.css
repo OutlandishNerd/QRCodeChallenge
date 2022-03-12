@@ -18,11 +18,9 @@ html
     background-color: hsl(0, 0%, 100%);
     padding: 20px 10px 10px 10px;
     margin: auto;
-    width: 100%;    
+    width: 300px;    
     text-align: center;
     font-family: 'Outfit', sans-serif;
-    width: 300px;
-    height: auto;
 
 }
 #bold
@@ -33,9 +31,11 @@ html
 }
 #normal
 {
+    
     color: hsl(220, 15%, 55%);
     font-size: 15px;
     font-weight: 400;
+    
 }
 .container img
 {
@@ -50,4 +50,28 @@ html
 .attribution a 
 { 
     color: hsl(228, 45%, 44%); 
+}
+@media (max-width: 375px)
+{
+    .container
+{
+    margin: auto;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+    padding-right: 10px;
+}
+.card
+{
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px 10px 10px 10px;
+    margin: auto;
+    width: 300px;    
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+
+}
+
 }
